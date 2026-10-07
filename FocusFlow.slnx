@@ -1,0 +1,7 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".gitignore" />
+  </Folder>
+  <Project Path="src/FocusFlow.Api/FocusFlow.Api.csproj" />
+  <Project Path="tests/FocusFlow.Api.Tests/FocusFlow.Api.Tests.csproj" Id="7a6169a0-554e-4574-a949-5845ec6e77ca" />
+</Solution>
