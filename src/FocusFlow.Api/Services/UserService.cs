@@ -20,15 +20,15 @@ namespace FocusFlow.Api.Services {
             var email = dto.Email.Trim().ToLowerInvariant();
             var timezone = dto.TimeZone.Trim();
 
-            var emailExists = await _context.Users.AnyAsync(u => u.Email == dto.Email);
+            var emailExists = await _context.Users.AnyAsync(u => u.Email == email);
             if (emailExists) {
                 throw new InvalidOperationException("Email is already in use.");
             }
 
             var user = new User {
-                Name = dto.Name,
-                Email = dto.Email,
-                TimeZone = dto.TimeZone,
+                Name = name,
+                Email = email,
+                TimeZone = timezone,
                 CreatedAt = DateTimeOffset.UtcNow,
                 UpdatedAt = DateTimeOffset.UtcNow
             };
