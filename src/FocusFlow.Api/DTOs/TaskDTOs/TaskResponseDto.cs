@@ -16,7 +16,7 @@ namespace FocusFlow.Api.DTOs.TaskDTOs {
 
         public TaskItemPriority Priority { get; set; }
 
-        public FocusFlow.Api.Models.TaskItemStatus Status { get; set; }
+        public TaskItemStatus Status { get; set; }
 
         public string? Category { get; set; }
 
