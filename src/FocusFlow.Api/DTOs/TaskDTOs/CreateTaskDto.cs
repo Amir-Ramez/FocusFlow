@@ -9,8 +9,8 @@ namespace FocusFlow.Api.DTOs.TaskDTOs {
         public string? Description { get; set; }
         [Range(1, 1440)]
         public int DurationMinutes { get; set; }
-        [EnumDataType(typeof(TaskPriority))]
-        public TaskPriority Priority { get; set; } = TaskPriority.Normal;
+        [EnumDataType(typeof(TaskItemStatus))]
+        public TaskItemPriority Priority { get; set; } = TaskItemPriority.Normal;
         public string? Category { get; set; }
         public DateTimeOffset? Deadline { get; set; }
         public long? GoalId { get; set; }
