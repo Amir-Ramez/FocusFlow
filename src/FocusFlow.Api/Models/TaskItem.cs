@@ -1,13 +1,13 @@
 namespace FocusFlow.Api.Models {
 
-    public enum TaskPriority {
+    public enum TaskItemPriority {
         Low,
         Normal,
         High,
         Urgent
     }
 
-    public enum TaskStatus {
+    public enum TaskItemStatus {
         Planned,
         Completed
     }
@@ -19,8 +19,8 @@ namespace FocusFlow.Api.Models {
         public string Title { get; set; } = string.Empty;
         public string? Description { get; set; }
         public int DurationMinutes { get; set; }
-        public TaskPriority Priority { get; set; } = TaskPriority.Normal;
-        public TaskStatus Status { get; set; } = TaskStatus.Planned;
+        public TaskItemPriority Priority { get; set; } = TaskItemPriority.Normal;
+        public TaskItemStatus Status { get; set; } = TaskItemStatus.Planned;
         public string? Category { get; set; }
         public DateTimeOffset? Deadline { get; set; }
         public DateTimeOffset CreatedAt { get; set; } = DateTimeOffset.UtcNow;

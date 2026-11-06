@@ -94,7 +94,7 @@ namespace FocusFlow.Api.Services {
                 Description = request.Description?.Trim(),
                 DurationMinutes = request.DurationMinutes,
                 Priority = request.Priority,
-                Status = FocusFlow.Api.Models.TaskStatus.Planned,
+                Status = TaskItemStatus.Planned,
                 Category = request.Category?.Trim(),
                 Deadline = request.Deadline,
                 CreatedAt = now,
